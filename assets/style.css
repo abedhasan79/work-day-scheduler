@@ -74,6 +74,13 @@ textarea {
   color: #000000;
 }
 
+@media screen and (max-width: 565px) {
+  body{
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+}
+
 
 
 
