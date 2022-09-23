@@ -1,12 +1,12 @@
-let time9Am = $("#9am");
-let time10Am = $("#10am");
-let time11Am = $("#11am");
-let time12Am = $("#12pm");
-let time1Am = $("#1pm");
-let time2Am = $("#2pm");
-let time3Am = $("#3pm");
-let time4Am = $("#4pm");
-let time5Am = $("#5pm");
+let time9Am = $("#9");
+let time10Am = $("#10");
+let time11Am = $("#11");
+let time12Am = $("#12");
+let time1Am = $("#1");
+let time2Am = $("#2");
+let time3Am = $("#3");
+let time4Am = $("#4");
+let time5Am = $("#5");
 
 
 function setTime() {
@@ -16,13 +16,13 @@ function setTime() {
 
         let currentTime = moment().format('HH');
         //
-        for(let i=9;i<18;i++){
+        for (let i = 9; i < 18; i++) {
             if (i == currentTime) {
-                $('#'+i.toString()).addClass('present');
+                $('#' + i.toString()).addClass('present');
             } else if (i > currentTime) {
-                $('#'+i.toString()).addClass('future');
+                $('#' + i.toString()).addClass('future');
             } else {
-                $('#'+i.toString()).addClass('past');
+                $('#' + i.toString()).addClass('past');
             }
         }
 
@@ -30,6 +30,20 @@ function setTime() {
 }
 
 setTime();
+
+
+
+for (let i = 9; i < 18; i++) {
+    if (!document.getElementById(i.toString()).getAttribute('readonly')) {
+        $(".saveBtn" + i.toString()).on('click', function () {
+            $('#' + i.toString()).attr('readonly', 'true');
+        });
+    } else {
+        $(".saveBtn" + i.toString()).off('click');
+    }
+
+
+}
 
 
 
