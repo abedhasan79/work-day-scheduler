@@ -76,8 +76,35 @@ textarea {
 
 @media screen and (max-width: 565px) {
   body{
-    margin-left: 5vh;
-    margin-right: 5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+  .box1{
+    max-width: 60%;
+  }
+  .box2{
+    max-width: 60%;
+  }
+  .box3{
+    max-width: 60%;
+  }
+  .box4{
+    max-width: 60%;
+  }
+  .box5{
+    max-width: 60%;
+  }
+  .box6{
+    max-width: 60%;
+  }
+  .box7{
+    max-width: 60%;
+  }
+  .box8{
+    max-width: 60%;
+  }
+  .box9{
+    max-width: 60%;
   }
 }
 
